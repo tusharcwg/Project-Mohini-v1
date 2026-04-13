@@ -1,0 +1,8 @@
+# Source file for pip-compile. Generate the hashed lockfile with:
+#   pip install --only-binary :all: pip-tools
+#   pip-compile --generate-hashes --output-file=requirements.txt requirements.in
+#
+# Only top-level runtime dependencies belong here. Transitive pins are
+# resolved into requirements.txt by pip-compile.
+pandas>=2.0,<3.0
+openpyxl>=3.1,<4.0

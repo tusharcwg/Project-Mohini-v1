@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fno-accumulation-analyzer"
+version = "1.0.0"
+description = "Offline F&O accumulation scoring model for Indian derivative analytics CSV/XLSX sheets"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Proprietary" }
+authors = [
+    { name = "Tushar Ghorpade" }
+]
+keywords = ["fno", "derivatives", "accumulation", "pcr", "nse", "analytics"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+# Runtime dependencies — pinned to minimum working floors.
+# Exact hashed versions live in requirements.txt (Rule #20).
+dependencies = [
+    "pandas>=2.0,<3.0",
+    "openpyxl>=3.1,<4.0",
+]
+
+[project.scripts]
+fno-analyzer = "fno_analyzer:main"
+
+[tool.setuptools]
+py-modules = ["fno_analyzer"]
