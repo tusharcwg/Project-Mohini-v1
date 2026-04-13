@@ -5,7 +5,8 @@ Offline Python CLI tool that ingests NSE F&O derivative analytics CSV/XLSX sheet
 The output is designed to be pasted directly back into an LLM for re-analysis without the LLM needing to re-do any arithmetic — the Markdown carries human context while the embedded JSON block carries the full structured payload.
 
 ---
-
+The CSV files are available on Stockedge.com >> FnO Section.
+---
 ## 1. Project Layout
 
 ```
